@@ -14,7 +14,7 @@ export const Container = styled.div`
 
   @media screen and (min-width: 768px) {
     height: 68px;
-    padding: 0 32px;
+    /* padding: 0 32px; */
   }
 
   @media screen and (min-width: 1280px) {
@@ -24,6 +24,7 @@ export const Container = styled.div`
 
 export const BurgerBtn = styled.button`
   cursor: pointer;
+  margin-left: auto;
   display: flex;
   width: 40px;
   height: 40px;
@@ -41,3 +42,32 @@ export const BtnIcon = styled.img`
   height: 16px;
   content: url(${buttonIcon});
 `;
+
+export const BtnTouch = styled.button`
+@media screen and (max-width: 768px){
+    display: none;    
+}
+@media screen and (min-width: 768px){
+    display: flex;
+}
+cursor: pointer;
+height: 40px;
+background: var(--main-clr-green);   
+border: none;
+border-radius: 20px;
+display: inline-flex;
+padding: 10px 16px;
+margin-left: 12px;
+justify-content: center;
+align-items: center;
+gap: 12px;
+`
+export const TouchText = styled.p`
+color: var(--main-clr-dark-green);
+font-family: FiraSans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.64px;   
+`

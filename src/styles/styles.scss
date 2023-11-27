@@ -1,28 +1,27 @@
 @font-face {
-    font-family: 'Oswald';
-    src: url('../fonts/Oswald-Regular.ttf');
+  font-family: 'Oswald';
+  src: url('../fonts/Oswald-Regular.ttf');
 }
 
 @font-face {
-    font-family: 'Oswald';
-    src: url('../fonts/Oswald-Bold.ttf');
+  font-family: 'Oswald';
+  src: url('../fonts/Oswald-Bold.ttf');
 }
 
 @font-face {
-    font-family: 'FiraSans';
-    src: url('../fonts/FiraSans-Regular.ttf')
+  font-family: 'FiraSans';
+  src: url('../fonts/FiraSans-Regular.ttf');
 }
 
 :root {
-    --main-black-clr: #292D32;
-    --main-clr-dark-green: #173D33;
-    --main-clr-green: #97D28B;
-    --second-clr-light-green: #DCEFD8;
-    --main-bg-clr: #F3F5FA;
-    --second-bg-clr:#EAEDF1;
-    --white-clr: #fff;
-    --err-red-clr: #D28B8B;
-
+  --main-black-clr: #292d32;
+  --main-clr-dark-green: #173d33;
+  --main-clr-green: #97d28b;
+  --second-clr-light-green: #dcefd8;
+  --main-bg-clr: #f3f5fa;
+  --second-bg-clr: #eaedf1;
+  --white-clr: #fff;
+  --err-red-clr: #d28b8b;
 }
 
 *,
@@ -83,8 +82,8 @@ button {
 
   /* tablet screen */
   @media screen and (min-width: 768px) {
-    padding-right: 32px;
-    padding-left: 32px;
+    padding-right: 30px;
+    padding-left: 30px;
     width: 768px;
   }
 
