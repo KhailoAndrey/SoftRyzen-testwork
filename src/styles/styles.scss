@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'FiraSans';
+    src: url('../fonts/FiraSans-Regular.ttf')
+}
+
+:root {
+    --main-black-clr: #292D32;
+    --main-clr-dark-green: #173D33;
+    --main-clr-green: #97D28B;
+    --second-clr-light-green: #DCEFD8;
+    --main-bg-clr: #F3F5FA;
+    --second-bg-clr:#EAEDF1;
+    --white-clr: #fff;
+    --err-red-clr: #D28B8B;
+
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Oswald';
+  background-color: var(--main-bg-clr);
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+ul,
+ol,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  margin-top: 36px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 100%;
+
+  /* mobile screen */
+  @media screen and (min-width: 360px) {
+    width: 480px;
+  }
+
+  /* tablet screen */
+  @media screen and (min-width: 768px) {
+    padding-right: 32px;
+    padding-left: 32px;
+    width: 768px;
+  }
+
+  /* desktop screen */
+  @media screen and (min-width: 1280px) {
+    padding-right: 84px;
+    padding-left: 84px;
+    width: 1280px;
+  }
+}
+
+.no_scroll {
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}

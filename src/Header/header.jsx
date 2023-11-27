@@ -1,7 +1,15 @@
+import Logo from 'Logo/logo';
+import { BtnIcon, BurgerBtn, Container } from './header.styled';
+
 const Header = () => {
   return (
     <>
-      <h1>Header</h1>
+      <Container>
+        <Logo />
+        <BurgerBtn>
+          <BtnIcon />
+        </BurgerBtn>
+      </Container>
     </>
   );
 };
