@@ -89,8 +89,9 @@ button {
 
   /* desktop screen */
   @media screen and (min-width: 1280px) {
-    padding-right: 84px;
-    padding-left: 84px;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin-top: 24px;
     width: 1280px;
   }
 }
