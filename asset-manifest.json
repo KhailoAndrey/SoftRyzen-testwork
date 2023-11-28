@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/SoftRyzen-testwork/static/css/main.541f5bff.css",
-    "main.js": "/SoftRyzen-testwork/static/js/main.f9208607.js",
+    "main.css": "/SoftRyzen-testwork/static/css/main.08b8e33b.css",
+    "main.js": "/SoftRyzen-testwork/static/js/main.f8087724.js",
     "static/media/FiraSans-Regular.ttf": "/SoftRyzen-testwork/static/media/FiraSans-Regular.f4eb295ecc2fb842d61c.ttf",
-    "static/media/Oswald-Bold.ttf": "/SoftRyzen-testwork/static/media/Oswald-Bold.41669c1e4f6bdc605d26.ttf",
     "static/media/Oswald-Regular.ttf": "/SoftRyzen-testwork/static/media/Oswald-Regular.31bce04a1ae8549b1464.ttf",
     "index.html": "/SoftRyzen-testwork/index.html",
     "static/media/touch_arrow.svg": "/SoftRyzen-testwork/static/media/touch_arrow.0d1f95f92fb8b42968e950c9495c82b3.svg",
+    "static/media/arrow-right.svg": "/SoftRyzen-testwork/static/media/arrow-right.8085c25571bd171528539d4316d4f244.svg",
     "static/media/menu.svg": "/SoftRyzen-testwork/static/media/menu.03e96d8790194653b6ccfb63ad04f462.svg",
-    "main.541f5bff.css.map": "/SoftRyzen-testwork/static/css/main.541f5bff.css.map",
-    "main.f9208607.js.map": "/SoftRyzen-testwork/static/js/main.f9208607.js.map"
+    "main.08b8e33b.css.map": "/SoftRyzen-testwork/static/css/main.08b8e33b.css.map",
+    "main.f8087724.js.map": "/SoftRyzen-testwork/static/js/main.f8087724.js.map"
   },
   "entrypoints": [
-    "static/css/main.541f5bff.css",
-    "static/js/main.f9208607.js"
+    "static/css/main.08b8e33b.css",
+    "static/js/main.f8087724.js"
   ]
 }
