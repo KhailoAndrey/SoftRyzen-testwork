@@ -4,6 +4,7 @@ import {
   Line,
   MainAddress,
   MainContacts,
+  MainImage,
   MainMail,
   MainText,
   MainTitle,
@@ -38,6 +39,7 @@ const Main = () => {
           </MainAddress>
           <MainMail>office@ecosolution.com</MainMail>
         </MainContacts>
+        <MainImage/>
       </Wrapper>
     </>
   );

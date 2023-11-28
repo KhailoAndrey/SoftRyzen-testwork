@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { ReactSVG } from 'react-svg';
 import arrowRight from '../images/arrow-right.svg';
+import mainImg from '../images/wind-turbine.png'
 
 export const Wrapper = styled.div`
   margin: 0;
@@ -165,4 +166,14 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 letter-spacing: -0.64px;
+`
+export const MainImage = styled.img`
+width: 320px;
+height: 200px;
+flex-shrink: 0;
+background: url(${mainImg}) , 
+lightgray 50%;
+background-position: center;
+background-size: cover;
+margin-top: 36px;
 `
