@@ -3,27 +3,27 @@ import { ReactSVG } from 'react-svg';
 import arrowRight from '../images/arrow-right.svg';
 
 export const Wrapper = styled.div`
-margin: 0;  
+  margin: 0;
   margin-top: 146px;
-  @media screen and (min-width: 768px){
-      margin-top: 164px;  
-      display: flex;  
-      justify-content: space-between;
-  margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    margin-top: 164px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
   }
-  @media screen and (min-width: 1440px){
-margin-top: 200px;
+  @media screen and (min-width: 1280px) {
+    margin-top: 200px;
   }
 `;
 export const MainTitle = styled.div`
   width: 320px;
   margin-bottom: 24px;
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     width: 301px;
     margin-bottom: 0;
   }
-    @media screen and (min-width: 1440px){
-width: 485px;
+  @media screen and (min-width: 1280px) {
+    width: 485px;
   }
 `;
 
@@ -35,34 +35,39 @@ export const TextTitle = styled.p`
   font-weight: 400;
   line-height: 36px;
   text-transform: uppercase;
-  @media screen and (min-width: 768px){
-font-size: 48px;
-line-height: 48px; 
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 48px;
     width: 301px;
   }
-  @media screen and (min-width: 1440px){
-width: 485px;
-font-size: 64px;
-line-height: 64px;
-}
+  @media screen and (min-width: 1280px) {
+    width: 485px;
+    font-size: 64px;
+    line-height: 64px;
+  }
 `;
 
 export const Paragraph = styled.div`
   display: flex;
   gap: 24px;
   flex-direction: column;
-  width: 320px;
+  max-width: 320px;
   justify-content: center;
   align-items: center;
-        margin-bottom: 24px;
+  margin-bottom: 24px;
 
-@media screen and (min-width: 768px){
-width: 342px;
-gap: 43px;
-align-items: start;
-justify-content: space-between;
-margin-bottom: 0;
-}
+  @media screen and (min-width: 768px) {
+    max-width: 342px;
+    gap: 43px;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 363px;
+    margin-left: 300px;
+    margin-right: auto;
+  }
 `;
 export const MainText = styled.p`
   color: var(--main-clr-dark-green);
@@ -73,10 +78,7 @@ export const MainText = styled.p`
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.64px;
-      /* margin-bottom: 24px; */
-
 `;
-
 
 export const ArrowRight = styled(ReactSVG).attrs({
   src: arrowRight,
@@ -125,14 +127,14 @@ export const BtnMore = styled.button`
 `;
 
 export const Line = styled.div`
-    width: 320px;
-height: 1px;
-flex-shrink: 0;
-background: #97D28B;
-@media screen and (min-width: 768px){
+  width: 320px;
+  height: 1px;
+  flex-shrink: 0;
+  background: #97d28b;
+  @media screen and (min-width: 768px) {
     width: 708px;
   }
-  @media screen and (min-width: 1280px){
+  @media screen and (min-width: 1280px) {
     width: 1240px;
   }
-`
+`;
