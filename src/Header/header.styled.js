@@ -16,11 +16,10 @@ export const Container = styled.div`
 
   @media screen and (min-width: 768px) {
     height: 68px;
-    /* padding: 0 32px; */
   }
 
   @media screen and (min-width: 1280px) {
-    padding: 0 16px;
+    padding: 0;
   }
 `;
 
@@ -50,7 +49,7 @@ export const TouchText = styled.p`
   color: var(--main-clr-dark-green);
   transition: color 0.3s ease;
 
-  font-family: FiraSans;
+  font-family: Fira Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;

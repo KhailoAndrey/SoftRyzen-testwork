@@ -4,12 +4,7 @@
 }
 
 @font-face {
-  font-family: 'Oswald';
-  src: url('../fonts/Oswald-Bold.ttf');
-}
-
-@font-face {
-  font-family: 'FiraSans';
+  font-family: 'Fira Sans';
   src: url('../fonts/FiraSans-Regular.ttf');
 }
 
@@ -69,15 +64,14 @@ button {
 
 .container {
   margin-top: 36px;
-  margin-right: auto;
-  margin-left: auto;
   padding-left: 20px;
   padding-right: 20px;
   max-width: 100%;
+background-color: var(--main-bg-clr);
 
   /* mobile screen */
   @media screen and (min-width: 360px) {
-    width: 480px;
+    width: 360px;
   }
 
   /* tablet screen */
@@ -88,11 +82,11 @@ button {
   }
 
   /* desktop screen */
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1440px) {
     padding-right: 100px;
     padding-left: 100px;
     margin-top: 24px;
-    width: 1280px;
+    min-width: 1280px;
   }
 }
 
