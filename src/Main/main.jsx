@@ -2,6 +2,9 @@ import {
   ArrowRight,
   BtnMore,
   Line,
+  MainAddress,
+  MainContacts,
+  MainMail,
   MainText,
   MainTitle,
   Paragraph,
@@ -28,8 +31,14 @@ const Main = () => {
             <ArrowRight />
           </BtnMore>
         </Paragraph>
+        <Line />
+        <MainContacts>
+          <MainAddress>
+            79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
+          </MainAddress>
+          <MainMail>office@ecosolution.com</MainMail>
+        </MainContacts>
       </Wrapper>
-      <Line />
     </>
   );
 };

@@ -138,3 +138,31 @@ export const Line = styled.div`
     width: 1240px;
   }
 `;
+
+export const MainContacts = styled.div`
+  align-items: center;
+  margin-top: 24px;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+`
+export const MainAddress = styled.p`
+  color: var(--main-clr-dark-green);
+font-family: Fira Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.64px;  
+`
+export const MainMail = styled.a`
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--main-clr-dark-green);
+font-family: Fira Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.64px;
+`
