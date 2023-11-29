@@ -36,7 +36,7 @@ export const MainTitle = styled.div`
   }
 `;
 
-export const TextTitle = styled.p`
+export const TextTitle = styled.h1`
   color: var(--main-clr-dark-green);
   font-family: Oswald;
   font-size: 36px;
@@ -131,19 +131,6 @@ export const BtnMore = styled.button`
     ${TextMore} {
       color: var(--main-clr-green);
     }
-  }
-`;
-
-export const Line = styled.div`
-  width: 320px;
-  height: 1px;
-  flex-shrink: 0;
-  background: #97d28b;
-  @media screen and (min-width: 768px) {
-    width: 708px;
-  }
-  @media screen and (min-width: 1280px) {
-    width: 1240px;
   }
 `;
 

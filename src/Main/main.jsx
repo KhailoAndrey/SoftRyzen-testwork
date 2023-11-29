@@ -1,7 +1,7 @@
+import { Linee } from 'utils/line.styled';
 import {
   ArrowRight,
   BtnMore,
-  Line,
   MainAddress,
   MainContacts,
   MainImage,
@@ -36,7 +36,7 @@ const Main = () => {
             </BtnMore>
           </Paragraph>
         </MainInfo>
-        <Line />
+        <Linee />
         <MainContacts>
           <MainAddress>
             79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
