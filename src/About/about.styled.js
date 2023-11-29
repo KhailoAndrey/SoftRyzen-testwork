@@ -21,7 +21,11 @@ export const Wrapper = styled.div`
     margin-bottom: 120px;
   }
 `;
-export const ValuesBox = styled.div``;
+export const ValuesBox = styled.div`
+@media screen and (min-width: 768px){
+    display: flex;
+}
+`;
 
 export const ValuesTitle = styled.h1`
   color: var(--main-clr-dark-green);
