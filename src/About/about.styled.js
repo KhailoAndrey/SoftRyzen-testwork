@@ -17,13 +17,19 @@ export const Wrapper = styled.div`
     margin-bottom: 100px;
   }
   @media screen and (min-width: 1280px) {
-    width: 1242px;
+    width: 1240px;
     margin-bottom: 120px;
   }
 `;
 export const ValuesBox = styled.div`
+margin-bottom: 36px;
 @media screen and (min-width: 768px){
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+@media screen and (min-width: 1280px){
+ margin-bottom: 122px;   
 }
 `;
 
@@ -39,12 +45,32 @@ export const ValuesTitle = styled.h1`
   @media screen and (min-width: 768px) {
     font-size: 36px;
     line-height: 36px;
+    width: 272px;
   }
   @media screen and (min-width: 1280px) {
     font-size: 48px;
     line-height: 48px;
+    width: 365px;
   }
 `;
+
+export const Rectangle = styled.div`
+display: none;
+@media screen and (min-width: 768px){  
+    display: block;  
+    width: 1px;
+    height: 110px;
+    flex-shrink: 0;
+    background: var(--main-clr-green);
+    margin-left: auto;
+    margin-right: 11px;
+}
+@media screen and (min-width: 1280px){
+ height: 87px;   
+ margin-right: 161px;
+}
+
+`
 
 export const ValuesText = styled.p`
   color: var(--main-clr-dark-green);
@@ -55,7 +81,14 @@ export const ValuesText = styled.p`
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.64px;
-  margin-bottom: 36px;
+  /* margin-bottom: 36px; */
+  @media screen and (min-width: 768px){
+   width: 342px; 
+   margin-right: 0;
+  }
+  @media screen and (min-width: 1280px){
+   width: 459px; 
+  }
 `;
 export const ValuesGrid = styled.div`
   display: grid;

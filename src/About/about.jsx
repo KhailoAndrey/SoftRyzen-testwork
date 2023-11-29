@@ -9,6 +9,7 @@ import {
   InnovationIcon,
   OpennessIcon,
   QualityIcon,
+  Rectangle,
   ResponsibilityIcon,
   ValuesBox,
   ValuesGrid,
@@ -23,6 +24,7 @@ const About = () => {
       <Wrapper>
         <ValuesBox>
           <ValuesTitle>Main values of our company</ValuesTitle>
+          <Rectangle />
           <ValuesText>
             EcoSolution envisions a world where sustainable energy solutions
             power a brighter and cleaner future for all. We aspire to be at the
