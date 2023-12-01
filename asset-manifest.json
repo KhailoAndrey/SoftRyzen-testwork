@@ -1,10 +1,13 @@
 {
   "files": {
     "main.css": "/SoftRyzen-testwork/static/css/main.816cc81b.css",
-    "main.js": "/SoftRyzen-testwork/static/js/main.6e4acae3.js",
+    "main.js": "/SoftRyzen-testwork/static/js/main.cd76a408.js",
     "static/js/142.a4b5e872.chunk.js": "/SoftRyzen-testwork/static/js/142.a4b5e872.chunk.js",
+    "static/js/906.63a81d8d.chunk.js": "/SoftRyzen-testwork/static/js/906.63a81d8d.chunk.js",
     "static/js/746.e6d2347c.chunk.js": "/SoftRyzen-testwork/static/js/746.e6d2347c.chunk.js",
+    "static/js/430.ed7c13a0.chunk.js": "/SoftRyzen-testwork/static/js/430.ed7c13a0.chunk.js",
     "static/js/503.28c4c74c.chunk.js": "/SoftRyzen-testwork/static/js/503.28c4c74c.chunk.js",
+    "static/js/48.d18bf347.chunk.js": "/SoftRyzen-testwork/static/js/48.d18bf347.chunk.js",
     "static/js/594.bf057ea7.chunk.js": "/SoftRyzen-testwork/static/js/594.bf057ea7.chunk.js",
     "static/js/17.62240249.chunk.js": "/SoftRyzen-testwork/static/js/17.62240249.chunk.js",
     "static/js/405.86d617ff.chunk.js": "/SoftRyzen-testwork/static/js/405.86d617ff.chunk.js",
@@ -36,16 +39,19 @@
     "static/media/responsibility.svg": "/SoftRyzen-testwork/static/media/responsibility.1c83116edc615bb57d0bac9f576d4e14.svg",
     "index.html": "/SoftRyzen-testwork/index.html",
     "static/media/openness.svg": "/SoftRyzen-testwork/static/media/openness.e09b2e717d0e2b3e1450b28fdf496960.svg",
+    "static/media/instagram.svg": "/SoftRyzen-testwork/static/media/instagram.c6c690ee3a57d6548369ac9028d4f4ae.svg",
+    "static/media/facebook.svg": "/SoftRyzen-testwork/static/media/facebook.30eb6836d02b3962698386357cf8b536.svg",
     "static/media/touch_arrow.svg": "/SoftRyzen-testwork/static/media/touch_arrow.0d1f95f92fb8b42968e950c9495c82b3.svg",
     "static/media/arrow-right.svg": "/SoftRyzen-testwork/static/media/arrow-right.8085c25571bd171528539d4316d4f244.svg",
     "static/media/swiper-arrow-right.svg": "/SoftRyzen-testwork/static/media/swiper-arrow-right.c1bfacdfa8bdd9dea44291714b4b0814.svg",
+    "static/media/arrow-up.svg": "/SoftRyzen-testwork/static/media/arrow-up.426cfe1fe573b7a7fa7945d4fb7dfa01.svg",
     "static/media/menu.svg": "/SoftRyzen-testwork/static/media/menu.03e96d8790194653b6ccfb63ad04f462.svg",
     "static/media/ellipse.svg": "/SoftRyzen-testwork/static/media/ellipse.9ea3b36591b56eef2e7a.svg",
     "main.816cc81b.css.map": "/SoftRyzen-testwork/static/css/main.816cc81b.css.map",
-    "main.6e4acae3.js.map": "/SoftRyzen-testwork/static/js/main.6e4acae3.js.map"
+    "main.cd76a408.js.map": "/SoftRyzen-testwork/static/js/main.cd76a408.js.map"
   },
   "entrypoints": [
     "static/css/main.816cc81b.css",
-    "static/js/main.6e4acae3.js"
+    "static/js/main.cd76a408.js"
   ]
 }
