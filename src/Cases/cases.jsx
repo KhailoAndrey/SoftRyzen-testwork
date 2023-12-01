@@ -9,6 +9,7 @@ import {
   CasesHeadBox,
   CasesTitle,
   LineVert,
+  Slides,
   SwipeBtnLeft,
   SwipeBtnRight,
   SwiperButtons,
@@ -21,35 +22,42 @@ import {
   SwiperItemText,
   SwiperItemTitle,
   SwiperNumberSlide,
+  SwiperNumberTotal,
   SwiperTitleBox,
   Wrapper,
 } from './cases.styled';
-
-// import slide1 from '../images/slide1.jpg';
-// import slide2 from '../images/slide2.jpg';
-// import slide3 from '../images/slide3.jpg';
-// import slide4 from '../images/slide4.jpg';
-// import slide5 from '../images/slide5.jpg';
+import { useRef, useState } from 'react';
+import SwiperSlideImg from './swiperItem';
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 const Cases = ({ slides }) => {
+  const swiperRef = useRef(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleSlideChange = () => {
+    if (swiperRef.current) {
+      setActiveIndex(swiperRef.current.swiper.realIndex);
+    }
+  };
+
   const carouselSettings = {
     a11y: {
       prevSlideMessage: 'Previous slide',
       nextSlideMessage: 'Next slide',
     },
-    spaceBetween: 40,
+    spaceBetween: 20,
     slidesPerView: 1,
-    // breakpoints: {
-    //   768: {
-    //     spaceBetween: 24,
-    //     // slidesPerView: 1.33,
-    //   },
-    //   1280: {
-    //     // slidesPerView: 1.25,
-    //   },
-    // },
+    breakpoints: {
+      768: {
+        spaceBetween: 24,
+        slidesPerView: 2,
+      },
+      1280: {
+        slidesPerView: 2,
+        spaceBetween: 48,
+      },
+    },
     loop: true,
     initialSlide: 0,
     navigation: {
@@ -63,16 +71,7 @@ const Cases = ({ slides }) => {
     <SwiperSlide key={id}>
       <SwiperItem>
         <SwiperImg>
-          {/* <picture>
-            <source
-              srcSet={require(`../../src/images/slide${id}.jpg`).default}
-              type="image/jpeg"
-            /> */}
-          <img
-            src={photo}
-            alt="slide"
-          />
-          {/* </picture> */}
+          <SwiperSlideImg photo={photo} />
         </SwiperImg>
         <SwiperInfo>
           <SwiperTitleBox>
@@ -97,7 +96,10 @@ const Cases = ({ slides }) => {
           <CasesTitle>Successful cases of our company</CasesTitle>
           <LineVert />
           <SwiperButtons>
-            <SwiperNumberSlide>01/05</SwiperNumberSlide>
+            <SwiperNumberSlide>
+              {`${(activeIndex + 1).toString().padStart(2, '0')}`}
+              <SwiperNumberTotal>/05</SwiperNumberTotal>
+            </SwiperNumberSlide>
             <SwipeBtnLeft className={`swiper-prev-btn`}>
               <Arrow />
             </SwipeBtnLeft>
@@ -106,39 +108,13 @@ const Cases = ({ slides }) => {
             </SwipeBtnRight>
           </SwiperButtons>
         </CasesHeadBox>
-        {/* <Slides> */}
-        <Swiper {...carouselSettings}>
-          {swiperSlides}
-          {/* <div>
-              {slides.map(({ id, photo, title, alt, date }) => (
-                  <SwiperSlide key={id}>
-                    <SwiperItem>
-                      <SwiperImg>
-                        <picture>
-                          <source srcSet={photo} type="image/jpeg" />
-                          <img src={photo} alt="slide" />
-                        </picture>
-                      </SwiperImg>
-                      <SwiperInfo>
-                        <SwiperTitleBox>
-                          <SwiperItemTitle>{title}</SwiperItemTitle>
-                          <SwiperItemBtnLink>
-                            <Arrow rotateupleft="true" scale={0.77} />
-                          </SwiperItemBtnLink>
-                        </SwiperTitleBox>
-                        <Linee />
-                        <SwiperInfoBox>
-                          <SwiperItemText>{alt}</SwiperItemText>
-                          <SwiperItemDate>{date}</SwiperItemDate>
-                        </SwiperInfoBox>
-                      </SwiperInfo>
-                    </SwiperItem>
-                  </SwiperSlide>
-                )
-              )}
-            </div> */}
+        <Swiper
+          ref={swiperRef}
+          onSlideChange={handleSlideChange}
+          {...carouselSettings}
+        >
+          <Slides>{swiperSlides}</Slides>
         </Swiper>
-        {/* </Slides> */}
       </Wrapper>
     </>
   );
