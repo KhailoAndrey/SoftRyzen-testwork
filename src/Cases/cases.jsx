@@ -61,7 +61,7 @@ const Cases = () => {
               <Arrow />
             </SwipeBtnLeft>
             <SwipeBtnRight className={`swiper-next-btn`}>
-              <Arrow rotateRight />
+              <Arrow rotateright="true" />
             </SwipeBtnRight>
           </SwiperButtons>
         </CasesHeadBox>
@@ -81,7 +81,7 @@ const Cases = () => {
                     BUH”
                   </SwiperItemTitle>
                   <SwiperItemBtnLink>
-                    <Arrow rotateUpLeft scale={0.77} />
+                    <Arrow rotateupleft="true" scale={0.77} />
                   </SwiperItemBtnLink>
                 </SwiperTitleBox>
                 <Linee />
@@ -109,7 +109,7 @@ const Cases = () => {
                     BUH”
                   </SwiperItemTitle>
                   <SwiperItemBtnLink>
-                    <Arrow rotateUpLeft scale={0.77} />
+                    <Arrow rotateupleft="true" scale={0.77} />
                   </SwiperItemBtnLink>
                 </SwiperTitleBox>
                 <Linee />

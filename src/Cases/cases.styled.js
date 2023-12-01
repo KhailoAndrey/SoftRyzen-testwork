@@ -91,8 +91,8 @@ export const Arrow = styled(ReactSVG).attrs({
   height: ${props => (props.size ? props.size + 'px' : '36px')};
   transform: ${props => {
     let transformValue = '';
-    if (props.rotateRight) transformValue += 'rotateY(180deg) ';
-    if (props.rotateUpLeft) transformValue += 'rotate(135deg) ';
+    if (props.rotateright) transformValue += 'rotateY(180deg) ';
+    if (props.rotateupleft) transformValue += 'rotate(135deg) ';
     if (props.scale) transformValue += `scale(${props.scale})`;
     return transformValue.trim() || 'none';
   }};
