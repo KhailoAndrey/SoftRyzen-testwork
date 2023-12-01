@@ -69,7 +69,7 @@ const Cases = ({ slides }) => {
               type="image/jpeg"
             /> */}
           <img
-            src={require(`${photo}`).default}
+            src={photo}
             alt="slide"
           />
           {/* </picture> */}
