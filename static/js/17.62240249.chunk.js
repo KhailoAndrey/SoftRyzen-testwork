@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreact_template=self.webpackChunkreact_template||[]).push([[17],{17:(e,t,a)=>{e.exports=a.p+"static/media/menu.03e96d8790194653b6cc.svg"}}]);
