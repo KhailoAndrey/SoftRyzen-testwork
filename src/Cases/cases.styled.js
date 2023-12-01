@@ -236,6 +236,12 @@ export const SwiperItemBtnLink = styled.button`
   background: var(--main-clr-green);
   transform-origin: center;
   margin-left: 60px;
+  &:hover{
+    background: var(--main-clr-dark-green);
+    ${Arrow} {
+      stroke: var(--main-clr-green);
+    }
+  }
 `;
 
 export const SwiperInfoBox = styled.div`
