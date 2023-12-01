@@ -52,6 +52,13 @@ export const SwipeBtnRight = styled.button`
     border: 1px solid var(--main-clr-green);
   }
 `;
+
+export const Slides = styled.div`
+display: flex;
+height: 318px;
+
+  
+`
 export const SwiperItem = styled.div`
   background-color: var(--second-bg-clr);
   height: 318px;

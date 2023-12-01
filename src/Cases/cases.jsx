@@ -1,6 +1,7 @@
 import SwiperCore from 'swiper';
-
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import 'swiper/css';
 
 import { Linee } from 'utils/line.styled';
 import {
@@ -23,14 +24,22 @@ import {
   SwiperTitleBox,
   Wrapper,
 } from './cases.styled';
-import { Swiper, SwiperSlide } from 'swiper/react';
+
 import slide1 from '../images/slide1.jpg';
+import slide2 from '../images/slide2.jpg';
+import slide3 from '../images/slide3.jpg';
+import slide4 from '../images/slide4.jpg';
+import slide5 from '../images/slide5.jpg';
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
-const Cases = () => {
+const Cases = ({ slides }) => {
   const carouselSettings = {
-    spaceBetween: 16,
+    a11y: {
+      prevSlideMessage: 'Previous slide',
+      nextSlideMessage: 'Next slide',
+    },
+    spaceBetween: 40,
     slidesPerView: 1,
     // breakpoints: {
     //   768: {
@@ -49,6 +58,38 @@ const Cases = () => {
     },
     speed: 1000,
   };
+
+  const swiperSlides = slides.map(({ id, photo, title, alt, date }) => (
+    <SwiperSlide key={id}>
+      <SwiperItem>
+        <SwiperImg>
+          {/* <picture>
+            <source
+              srcSet={require(`../../src/images/slide${id}.jpg`).default}
+              type="image/jpeg"
+            /> */}
+          <img
+            src={require(`${photo}`).default}
+            alt="slide"
+          />
+          {/* </picture> */}
+        </SwiperImg>
+        <SwiperInfo>
+          <SwiperTitleBox>
+            <SwiperItemTitle>{title}</SwiperItemTitle>
+            <SwiperItemBtnLink>
+              <Arrow rotateupleft="true" scale={0.77} />
+            </SwiperItemBtnLink>
+          </SwiperTitleBox>
+          <Linee />
+          <SwiperInfoBox>
+            <SwiperItemText>{alt}</SwiperItemText>
+            <SwiperItemDate>{date}</SwiperItemDate>
+          </SwiperInfoBox>
+        </SwiperInfo>
+      </SwiperItem>
+    </SwiperSlide>
+  ));
   return (
     <>
       <Wrapper>
@@ -65,64 +106,39 @@ const Cases = () => {
             </SwipeBtnRight>
           </SwiperButtons>
         </CasesHeadBox>
+        {/* <Slides> */}
         <Swiper {...carouselSettings}>
-          <SwiperSlide>
-            <SwiperItem>
-              <SwiperImg>
-                <picture>
-                  <source srcSet={slide1} type="image/jpeg" />
-                  <img src={slide1} alt="slide" />
-                </picture>
-              </SwiperImg>
-              <SwiperInfo>
-                <SwiperTitleBox>
-                  <SwiperItemTitle>
-                    Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI
-                    BUH”
-                  </SwiperItemTitle>
-                  <SwiperItemBtnLink>
-                    <Arrow rotateupleft="true" scale={0.77} />
-                  </SwiperItemBtnLink>
-                </SwiperTitleBox>
-                <Linee />
-                <SwiperInfoBox>
-                  <SwiperItemText>
-                    Wind Power for auto field irrigation
-                  </SwiperItemText>
-                  <SwiperItemDate>July 2023</SwiperItemDate>
-                </SwiperInfoBox>
-              </SwiperInfo>
-            </SwiperItem>
-          </SwiperSlide>
-          <SwiperSlide>
-            <SwiperItem>
-              <SwiperImg>
-                <picture>
-                  <source srcSet={slide1} type="image/jpeg" />
-                  <img src={slide1} alt="slide1" />
-                </picture>
-              </SwiperImg>
-              <SwiperInfo>
-                <SwiperTitleBox>
-                  <SwiperItemTitle>
-                    Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI
-                    BUH”
-                  </SwiperItemTitle>
-                  <SwiperItemBtnLink>
-                    <Arrow rotateupleft="true" scale={0.77} />
-                  </SwiperItemBtnLink>
-                </SwiperTitleBox>
-                <Linee />
-                <SwiperInfoBox>
-                  <SwiperItemText>
-                    Wind Power for auto field irrigation
-                  </SwiperItemText>
-                  <SwiperItemDate>July 2023</SwiperItemDate>
-                </SwiperInfoBox>
-              </SwiperInfo>
-            </SwiperItem>
-          </SwiperSlide>
+          {swiperSlides}
+          {/* <div>
+              {slides.map(({ id, photo, title, alt, date }) => (
+                  <SwiperSlide key={id}>
+                    <SwiperItem>
+                      <SwiperImg>
+                        <picture>
+                          <source srcSet={photo} type="image/jpeg" />
+                          <img src={photo} alt="slide" />
+                        </picture>
+                      </SwiperImg>
+                      <SwiperInfo>
+                        <SwiperTitleBox>
+                          <SwiperItemTitle>{title}</SwiperItemTitle>
+                          <SwiperItemBtnLink>
+                            <Arrow rotateupleft="true" scale={0.77} />
+                          </SwiperItemBtnLink>
+                        </SwiperTitleBox>
+                        <Linee />
+                        <SwiperInfoBox>
+                          <SwiperItemText>{alt}</SwiperItemText>
+                          <SwiperItemDate>{date}</SwiperItemDate>
+                        </SwiperInfoBox>
+                      </SwiperInfo>
+                    </SwiperItem>
+                  </SwiperSlide>
+                )
+              )}
+            </div> */}
         </Swiper>
+        {/* </Slides> */}
       </Wrapper>
     </>
   );

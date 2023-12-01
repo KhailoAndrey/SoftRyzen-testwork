@@ -7,6 +7,7 @@ import Cases from 'Cases/cases';
 import Faq from 'FAQ/faq';
 import Contacts from 'Contacts/contacts';
 import Footer from 'Footer/footer';
+import slides from './Cases/slides.json'
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       <Main />
       <About />
       <Electricity />
-      <Cases />
+        <Cases slides={slides} />
       <Faq />
       <Contacts />
       <Footer/>
