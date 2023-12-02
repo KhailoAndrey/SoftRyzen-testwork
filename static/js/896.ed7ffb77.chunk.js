@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkreact_template=self.webpackChunkreact_template||[]).push([[896],{896:(e,t,s)=>{e.exports=s.p+"static/media/responsibility.1c83116edc615bb57d0b.svg"}}]);

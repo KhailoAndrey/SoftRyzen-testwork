@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreact_template=self.webpackChunkreact_template||[]).push([[273],{9273:(e,t,a)=>{e.exports=a.p+"static/media/call.e5a62b2398fcfd802d72.svg"}}]);

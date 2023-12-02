@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkreact_template=self.webpackChunkreact_template||[]).push([[62],{62:(e,a,t)=>{e.exports=t.p+"static/media/swiper-arrow-right.c1bfacdfa8bdd9dea442.svg"}}]);

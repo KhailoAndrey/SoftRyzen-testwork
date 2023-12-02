@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreact_template=self.webpackChunkreact_template||[]).push([[150],{8150:(e,t,a)=>{e.exports=a.p+"static/media/map.e530d2000b4bf7830751.svg"}}]);

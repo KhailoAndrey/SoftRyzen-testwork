@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreact_template=self.webpackChunkreact_template||[]).push([[176],{3176:(e,a,t)=>{e.exports=t.p+"static/media/slide3.b8c6a09cbafafb5b5b24.jpg"}}]);

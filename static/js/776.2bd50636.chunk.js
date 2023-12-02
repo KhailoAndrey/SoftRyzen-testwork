@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreact_template=self.webpackChunkreact_template||[]).push([[776],{4776:(e,t,a)=>{e.exports=a.p+"static/media/touch_arrow.0d1f95f92fb8b42968e9.svg"}}]);

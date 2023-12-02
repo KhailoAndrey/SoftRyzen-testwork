@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkreact_template=self.webpackChunkreact_template||[]).push([[746],{746:(e,t,a)=>{e.exports=a.p+"static/media/ellipse.9ea3b36591b56eef2e7a.svg"}}]);

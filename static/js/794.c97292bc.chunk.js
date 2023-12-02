@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreact_template=self.webpackChunkreact_template||[]).push([[794],{7794:(e,t,c)=>{e.exports=c.p+"static/media/sms.351c6fc51dc0f55db3ce.svg"}}]);

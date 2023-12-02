@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreact_template=self.webpackChunkreact_template||[]).push([[48],{4048:(e,t,a)=>{e.exports=a.p+"static/media/instagram.5fcff9d32b0249509d78.svg"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreact_template=self.webpackChunkreact_template||[]).push([[430],{7430:(e,t,a)=>{e.exports=a.p+"static/media/facebook.5dbd16dad343d02c1223.svg"}}]);
