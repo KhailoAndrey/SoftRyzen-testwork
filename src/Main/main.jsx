@@ -17,6 +17,22 @@ import {
 } from './main.styled';
 
 const Main = () => {
+  const handleScroll = () => {
+    const sectionId = 'cases';
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+      const headerHeight = 50;
+      const sectionRect = section.getBoundingClientRect();
+
+      window.scrollTo({
+        top: sectionRect.top + window.scrollY - headerHeight,
+        left: 0,
+        behavior: 'smooth',
+      });
+    }
+  };
+
   return (
     <>
       <Wrapper>
@@ -30,7 +46,7 @@ const Main = () => {
               sources, generating power generation using energy wind, sun,
               water, biomass
             </MainText>
-            <BtnMore>
+            <BtnMore onClick={handleScroll}>
               <TextMore>Learn more</TextMore>
               <ArrowRight />
             </BtnMore>

@@ -91,7 +91,7 @@ const Cases = ({ slides }) => {
   ));
   return (
     <>
-      <Wrapper>
+      <Wrapper id="cases">
         <CasesHeadBox>
           <CasesTitle>Successful cases of our company</CasesTitle>
           <LineVert />

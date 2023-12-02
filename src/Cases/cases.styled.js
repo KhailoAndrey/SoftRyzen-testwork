@@ -32,7 +32,7 @@ export const CasesTitle = styled.h2`
   line-height: 28px;
   text-transform: uppercase;
   margin-bottom: 24px;
-  @media screen and (min-width: 76px) {
+  @media screen and (min-width: 768px) {
     font-size: 36px;
     line-height: 36px;
     width: 343px;
@@ -118,6 +118,7 @@ export const SwipeBtnLeft = styled.button`
   border: 1px solid var(--main-clr-dark-green);
   margin-right: 12px;
   margin-left: auto;
+  background: var(--main-bg-clr);
   &:hover {
     border: 1px solid var(--main-clr-green);
     ${Arrow} {
@@ -138,6 +139,8 @@ export const SwipeBtnRight = styled.button`
   border-radius: 100px;
   border: 1px solid var(--main-clr-dark-green);
   margin-right: 0;
+  background: var(--main-bg-clr);
+
   &:hover {
     border: 1px solid var(--main-clr-green);
     ${Arrow} {
@@ -236,7 +239,7 @@ export const SwiperItemBtnLink = styled.button`
   background: var(--main-clr-green);
   transform-origin: center;
   margin-left: 60px;
-  &:hover{
+  &:hover {
     background: var(--main-clr-dark-green);
     ${Arrow} {
       stroke: var(--main-clr-green);

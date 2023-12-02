@@ -12,6 +12,13 @@ import {
   Wrapper,
 } from './footer.styled';
 
+const handleScrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+};
+
 const Footer = () => {
   return (
     <>
@@ -19,7 +26,7 @@ const Footer = () => {
         <Linee />
         <FooterLogoBox>
           <Logo />
-          <FooterBtnUp>
+          <FooterBtnUp onClick={handleScrollToTop}>
             <ArrowRight />
           </FooterBtnUp>
         </FooterLogoBox>
