@@ -91,16 +91,8 @@ export const MainText = styled.p`
 export const ArrowRight = styled(ReactSVG).attrs({
   src: arrowRight,
 })`
-  svg {
-    circle {
-      fill: var(--main-clr-green);
-      transition: fill 0.3s ease;
-    }
-    path {
-      stroke: var(--main-clr-dark-green);
-      transition: stroke 0.3s ease;
-    }
-  }
+width: 32px;
+height: 32px;
 `;
 
 export const TextMore = styled.p`
@@ -123,7 +115,6 @@ export const BtnMore = styled.button`
   gap: 12px;
   flex-shrink: 0;
   border-radius: 500px;
-
   border: 1px solid var(--main-clr-green);
   background-color: var(--main-bg-clr);
   &:hover {

@@ -76,17 +76,27 @@ export const FooterLogoBox = styled.div`
 export const FBIcon = styled(ReactSVG).attrs({
   src: fbimg,
 })`
+fill: var(--main-clr-dark-green);
+stroke: var(--main-clr-dark-green);
   width: 24px;
   height: 24px;
   cursor: pointer;
+  &:hover{
+    stroke: var(--main-clr-green);
+    fill: var(--main-clr-green)
+  }
 `;
 
 export const InstaIcon = styled(ReactSVG).attrs({
   src: instaimg,
 })`
+stroke: var(--main-clr-dark-green);
   width: 24px;
   height: 24px;
   cursor: pointer;
+  &:hover{
+    stroke: var(--main-clr-green)
+  }
 `;
 
 export const FooterInfo = styled.div`
@@ -110,7 +120,7 @@ export const FooterInfo = styled.div`
   }
 `;
 export const FooterText = styled.p`
-  color: #173d33;
+  color: var(--main-clr-dark-green);
   font-family: Fira Sans;
   font-size: 16px;
   font-style: normal;
