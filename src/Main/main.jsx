@@ -22,7 +22,7 @@ const Main = () => {
     const section = document.getElementById(sectionId);
 
     if (section) {
-      const headerHeight = 50;
+      const headerHeight = 70;
       const sectionRect = section.getBoundingClientRect();
 
       window.scrollTo({
