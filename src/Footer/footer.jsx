@@ -22,10 +22,14 @@ const handleScrollToTop = () => {
 const Footer = () => {
   return (
     <>
+      <Linee />
       <Wrapper>
-        <Linee />
         <FooterLogoBox>
           <Logo />
+          <FooterSocial>
+            <FBIcon />
+            <InstaIcon />
+          </FooterSocial>
           <FooterBtnUp onClick={handleScrollToTop}>
             <ArrowRight />
           </FooterBtnUp>

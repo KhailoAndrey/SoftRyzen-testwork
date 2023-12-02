@@ -6,16 +6,18 @@ import instaimg from '../images/instagram.svg';
 
 export const Wrapper = styled.div`
   width: 320px;
-  margin-bottom: 24px;
+  margin: 24px 0 24px;
   display: flex;
   flex-direction: column;
   gap: 24px;
-`;
-export const FooterLogoBox = styled.div`
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    margin: 40px 0 40px;
+    width: 708px;
+    gap: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1240px;
+  }
 `;
 export const ArrowRight = styled(ReactSVG).attrs({
   src: arrowUp,
@@ -46,6 +48,30 @@ export const FooterSocial = styled.div`
   align-items: center;
   justify-content: center;
   gap: 8px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+`;
+export const FooterLogoBox = styled.div`
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  ${FooterSocial} {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    ${FooterSocial} {
+      display: flex;
+      margin-left: auto;
+      margin-right: 254px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    ${FooterSocial} {
+      margin-right: 371px;
+    }
+  }
 `;
 export const FBIcon = styled(ReactSVG).attrs({
   src: fbimg,
@@ -69,6 +95,19 @@ export const FooterInfo = styled.div`
   gap: 16px;
   justify-content: space-between;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 0;
+    :nth-child(2) {
+      margin-right: 50px;
+      margin-left: auto;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    :nth-child(2) {
+      margin-right: 167px;
+    }
+  }
 `;
 export const FooterText = styled.p`
   color: #173d33;
