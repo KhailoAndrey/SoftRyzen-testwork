@@ -19,7 +19,7 @@ import {
 } from './faq.styled';
 
 const Faq = () => {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState(0);
 
   const toggleAnswerVisibility = index => {
     setOpenIndex(prevIndex => (prevIndex === index ? null : index));
@@ -53,7 +53,7 @@ const Faq = () => {
                   {openIndex === index ? (
                     <Minus style={{ stroke: 'var(--main-clr-dark-green)' }} />
                   ) : (
-                    <Plus style={{ stroke: 'var(--main-clr-dark-green)' }} />
+                    <Plus style={{ stroke: 'var(--main-clr-green)' }} />
                   )}
                 </BtnQ>
                 <Question>{data.question}</Question>

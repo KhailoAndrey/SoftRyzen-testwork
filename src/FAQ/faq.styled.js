@@ -34,6 +34,7 @@ export const BtnQ = styled.button`
   border: none;
   width: 16px;
   height: 16px;
+  background: transparent;
 `;
 
 export const QBlock = styled.div`
