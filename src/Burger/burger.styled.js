@@ -30,7 +30,8 @@ export const ModalBackdrop = styled.div`
 export const ModalWrapper = styled.div`
   backdrop-filter: none;
   width: 320px;
-  padding-top: 36px;
+  height: auto;
+  padding: 36px 0;
   @media screen and (min-width: 768px) {
     width: 708px;
     display: flex;
@@ -44,7 +45,7 @@ export const ModalWrapper = styled.div`
 `;
 export const ModalContent = styled.div`
   width: 320px;
-  height: 701px;
+  height: 100%;
   flex-shrink: 0;
   border-radius: 25px;
   background: rgba(23, 61, 51, 0.75);
@@ -53,8 +54,9 @@ export const ModalContent = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: start;
   animation: ${fadeIn} 0.5s ease;
+  overflow: auto;
   @media screen and (min-width: 768px) {
     padding: 24px 32px;
   }
@@ -99,6 +101,7 @@ export const Navi = styled.div`
   color: var(--white-clr);
   margin-top: 24px;
   width: 132px;
+  height: auto;
 `;
 export const LinkBlock = styled.div`
   display: flex;
@@ -134,9 +137,10 @@ export const SocialBlock = styled.div`
   align-items: center;
   justify-content: center;
   gap: 8px;
-  position: fixed;
+  /* position: fixed;
   left: 24px;
-  bottom: 24px;
+  bottom: 24px; */
+  margin-top: auto;
 `;
 
 export const FBIcon = styled(ReactSVG).attrs({
