@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/SoftRyzen-testwork/static/css/main.d716e236.css",
-    "main.js": "/SoftRyzen-testwork/static/js/main.e305c305.js",
+    "main.js": "/SoftRyzen-testwork/static/js/main.24bfc6d0.js",
     "static/js/798.a77af145.chunk.js": "/SoftRyzen-testwork/static/js/798.a77af145.chunk.js",
     "static/js/142.65bd54a4.chunk.js": "/SoftRyzen-testwork/static/js/142.65bd54a4.chunk.js",
     "static/js/906.f5c3a672.chunk.js": "/SoftRyzen-testwork/static/js/906.f5c3a672.chunk.js",
@@ -14,7 +14,9 @@
     "static/js/594.15b305ca.chunk.js": "/SoftRyzen-testwork/static/js/594.15b305ca.chunk.js",
     "static/js/150.8658e91e.chunk.js": "/SoftRyzen-testwork/static/js/150.8658e91e.chunk.js",
     "static/js/17.5d7d4c18.chunk.js": "/SoftRyzen-testwork/static/js/17.5d7d4c18.chunk.js",
+    "static/js/667.a2a328bf.chunk.js": "/SoftRyzen-testwork/static/js/667.a2a328bf.chunk.js",
     "static/js/405.fb91e109.chunk.js": "/SoftRyzen-testwork/static/js/405.fb91e109.chunk.js",
+    "static/js/152.32e7fcec.chunk.js": "/SoftRyzen-testwork/static/js/152.32e7fcec.chunk.js",
     "static/js/189.6a31a36c.chunk.js": "/SoftRyzen-testwork/static/js/189.6a31a36c.chunk.js",
     "static/js/896.b76db316.chunk.js": "/SoftRyzen-testwork/static/js/896.b76db316.chunk.js",
     "static/js/535.80388b51.chunk.js": "/SoftRyzen-testwork/static/js/535.80388b51.chunk.js",
@@ -54,14 +56,16 @@
     "static/media/arrow-right.svg": "/SoftRyzen-testwork/static/media/arrow-right.1f9f297440eb68add4e3630654496a71.svg",
     "static/media/swiper-arrow-right.svg": "/SoftRyzen-testwork/static/media/swiper-arrow-right.c1bfacdfa8bdd9dea44291714b4b0814.svg",
     "static/media/arrow-up.svg": "/SoftRyzen-testwork/static/media/arrow-up.426cfe1fe573b7a7fa7945d4fb7dfa01.svg",
+    "static/media/plus.svg": "/SoftRyzen-testwork/static/media/plus.e273cdd0898c157aea3f14766e4a19b8.svg",
     "static/media/menu.svg": "/SoftRyzen-testwork/static/media/menu.03e96d8790194653b6ccfb63ad04f462.svg",
+    "static/media/minus.svg": "/SoftRyzen-testwork/static/media/minus.2168a63d3f001faf247a95f5503f9e29.svg",
     "static/media/close-light.svg": "/SoftRyzen-testwork/static/media/close-light.dc24a051882f8b3588bf87c8750aac94.svg",
     "static/media/ellipse.svg": "/SoftRyzen-testwork/static/media/ellipse.9ea3b36591b56eef2e7a.svg",
     "main.d716e236.css.map": "/SoftRyzen-testwork/static/css/main.d716e236.css.map",
-    "main.e305c305.js.map": "/SoftRyzen-testwork/static/js/main.e305c305.js.map"
+    "main.24bfc6d0.js.map": "/SoftRyzen-testwork/static/js/main.24bfc6d0.js.map"
   },
   "entrypoints": [
     "static/css/main.d716e236.css",
-    "static/js/main.e305c305.js"
+    "static/js/main.24bfc6d0.js"
   ]
 }
