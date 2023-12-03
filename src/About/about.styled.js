@@ -81,7 +81,6 @@ export const ValuesText = styled.p`
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.64px;
-  /* margin-bottom: 36px; */
   @media screen and (min-width: 768px){
    width: 342px; 
    margin-right: 0;

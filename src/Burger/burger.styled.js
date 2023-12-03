@@ -137,9 +137,6 @@ export const SocialBlock = styled.div`
   align-items: center;
   justify-content: center;
   gap: 8px;
-  /* position: fixed;
-  left: 24px;
-  bottom: 24px; */
   margin-top: auto;
 `;
 

@@ -5,7 +5,6 @@ import ImageHover from '../images/logo_green.png';
 export const LogoWrapper = styled.div`
     display: flex;
     align-items: center;
-    /* margin-right: 11px; */
 &:hover {
     cursor: pointer; 
     }
