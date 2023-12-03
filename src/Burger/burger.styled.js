@@ -1,5 +1,9 @@
 import styled, { keyframes } from 'styled-components';
 
+import fbimg from '../images/facebook.svg';
+import instaimg from '../images/instagram.svg';
+import { ReactSVG } from 'react-svg';
+
 const fadeIn = keyframes`
   from {
     opacity: 0;
@@ -124,3 +128,40 @@ export const Links = styled.a`
   align-items: center;
   gap: 8px;
 `;
+
+export const SocialBlock = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: fixed;
+  left: 24px;
+  bottom: 24px;
+`;
+
+export const FBIcon = styled(ReactSVG).attrs({
+  src: fbimg,
+})`
+fill: var(--white-clr);
+stroke: var(--white-clr);
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  &:hover{
+    stroke: var(--main-clr-green);
+    fill: var(--main-clr-green)
+  }
+`;
+
+export const InstaIcon = styled(ReactSVG).attrs({
+  src: instaimg,
+})`
+stroke: var(--white-clr);
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  &:hover{
+    stroke: var(--main-clr-green)
+  }
+`;
+

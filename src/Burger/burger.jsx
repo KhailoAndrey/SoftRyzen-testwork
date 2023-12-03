@@ -2,12 +2,15 @@ import {
   CloseBlock,
   CloseBtn,
   CloseBtnText,
+  FBIcon,
+  InstaIcon,
   LinkBlock,
   Links,
   ModalBackdrop,
   ModalContent,
   ModalWrapper,
   Navi,
+  SocialBlock,
 } from './burger.styled';
 import { ReactComponent as CloseIcon } from '../images/close-light.svg';
 import { ReactComponent as LinkIcon } from '../images/arrow-right-up.svg';
@@ -62,6 +65,10 @@ const BurgerMenu = ({ onClose }) => {
               );
             })}
           </Navi>
+          <SocialBlock>
+            <FBIcon />
+            <InstaIcon />
+          </SocialBlock>
         </ModalContent>
       </ModalWrapper>
     </ModalBackdrop>
