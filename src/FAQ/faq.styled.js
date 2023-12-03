@@ -5,6 +5,14 @@ import arrow from '../images/touch_arrow.svg';
 export const Wrapper = styled.div`
   width: 320px;
   margin-top: 36px;
+  @media screen and (min-width: 768px) {
+    width: 708px;
+    margin-top: 100px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1240px;
+    margin-top: 120px;
+  }
 `;
 export const FaqTitle = styled.h2`
   color: var(--main-clr-dark-green);
@@ -15,26 +23,48 @@ export const FaqTitle = styled.h2`
   line-height: 28px;
   text-transform: uppercase;
   margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 `;
+
 export const FaqBlock = styled.div`
-  margin-bottom: 36px;
   display: flex;
   flex-direction: column;
   gap: 16px;
+  @media screen and (min-width: 1280px) {
+    gap: 24px;
+  }
 `;
+
 export const FaqModule = styled.div`
   display: flex;
   flex-direction: column;
   gap: 16px;
   justify-content: space-between;
   align-items: end;
+  @media screen and (min-width: 1280px) {
+    gap: 24px;
+  }
 `;
 
 export const BtnQ = styled.button`
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
   width: 16px;
   height: 16px;
   background: transparent;
+  @media screen and (min-width: 768px) {
+    width: 28px;
+    height: 28px;
+    svg {
+      width: 28px;
+      height: 28px;
+    }
+  }
 `;
 
 export const QBlock = styled.div`
@@ -42,6 +72,12 @@ export const QBlock = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 8px;
+  @media screen and (min-width: 768px) {
+    gap: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    gap: 24px;
+  }
 `;
 export const Question = styled.p`
   color: var(--main-clr-dark-green);
@@ -53,6 +89,14 @@ export const Question = styled.p`
   line-height: normal;
   letter-spacing: -0.72px;
   width: 296px;
+  @media screen and (min-width: 768px) {
+    width: 298px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 544px;
+    font-size: 24px;
+    letter-spacing: -0.96px;
+  }
 `;
 export const Answer = styled.p`
   color: var(--main-clr-dark-green);
@@ -64,6 +108,14 @@ export const Answer = styled.p`
   line-height: normal;
   letter-spacing: -0.56px;
   width: 296px;
+  @media screen and (min-width: 768px) {
+    width: 298px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 544px;
+    font-size: 16px;
+    letter-spacing: -0.64px;
+  }
 `;
 
 export const FaqFooter = styled.div`
@@ -72,9 +124,13 @@ export const FaqFooter = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 12px;
+  margin-top: 36px;
   ${Question} {
     width: 100%;
     text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 `;
 
@@ -135,4 +191,47 @@ export const BtnToContacts = styled.button`
       }
     }
   }
+`;
+
+export const OverMobileBlock = styled.div`
+  ${FaqTitle}, ${FaqFooter} {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 24px;
+    ${FaqTitle} {
+      display: block;
+      font-size: 36px;
+      line-height: 36px;
+    }
+    ${FaqFooter} {
+      margin-top: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    gap: 48px;
+    justify-content: space-between;
+    ${FaqFooter} {
+      width: 596px;
+    }
+    ${FaqTitle} {
+      width: 398px;
+      font-size: 48px;
+      line-height: 48px;
+    }
+    ${Question} {
+      font-size: 24px;
+      letter-spacing: -0.96px;
+    }
+  }
+`;
+
+export const FaqBtnBlock = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
 `;

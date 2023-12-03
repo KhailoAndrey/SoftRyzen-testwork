@@ -11,9 +11,11 @@ export const Wrapper = styled.div`
   margin: 36px 0 36px;
   @media screen and (min-width: 768px) {
     width: 708px;
+    margin-top: 100px;
   }
   @media screen and (min-width: 1280px) {
     width: 1240px;
+    margin-top: 120px;
   }
 `;
 export const ContactsTitle = styled.h2`

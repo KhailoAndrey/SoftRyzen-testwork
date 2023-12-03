@@ -10,9 +10,11 @@ import {
   BtnText,
   BtnToContacts,
   FaqBlock,
+  FaqBtnBlock,
   FaqFooter,
   FaqModule,
   FaqTitle,
+  OverMobileBlock,
   QBlock,
   Question,
   Wrapper,
@@ -44,28 +46,40 @@ const Faq = () => {
     <>
       <Wrapper id="faq">
         <FaqTitle>Frequently Asked Questions</FaqTitle>
-        <FaqBlock>
-          {faqData.map((data, index) => (
-            <FaqModule key={index}>
-              <Linee />
-              <QBlock>
-                <BtnQ onClick={() => toggleAnswerVisibility(index)}>
-                  {openIndex === index ? (
-                    <Minus style={{ stroke: 'var(--main-clr-dark-green)' }} />
-                  ) : (
-                    <Plus style={{ stroke: 'var(--main-clr-green)' }} />
-                  )}
-                </BtnQ>
-                <Question>{data.question}</Question>
-              </QBlock>
-              <Answer
-                style={{ display: openIndex === index ? 'block' : 'none' }}
-              >
-                {data.answer}
-              </Answer>
-            </FaqModule>
-          ))}
-        </FaqBlock>
+        <OverMobileBlock>
+          <FaqBlock>
+            {faqData.map((data, index) => (
+              <FaqModule key={index}>
+                <Linee />
+                <QBlock>
+                  <BtnQ onClick={() => toggleAnswerVisibility(index)}>
+                    {openIndex === index ? (
+                      <Minus style={{ stroke: 'var(--main-clr-dark-green)' }} />
+                    ) : (
+                      <Plus style={{ stroke: 'var(--main-clr-green)' }} />
+                    )}
+                  </BtnQ>
+                  <Question>{data.question}</Question>
+                </QBlock>
+                <Answer
+                  style={{ display: openIndex === index ? 'block' : 'none' }}
+                >
+                  {data.answer}
+                </Answer>
+              </FaqModule>
+            ))}
+          </FaqBlock>
+          <FaqFooter>
+            <FaqTitle>Frequently Asked Questions</FaqTitle>
+            <FaqBtnBlock>
+              <Question>Didn't find the answer to your question?</Question>
+              <BtnToContacts onClick={handleScroll}>
+                <BtnText>Contact Us</BtnText>
+                <Arrow />
+              </BtnToContacts>
+            </FaqBtnBlock>
+          </FaqFooter>
+        </OverMobileBlock>
         <FaqFooter>
           <Question>Didn't find the answer to your question?</Question>
           <BtnToContacts onClick={handleScroll}>
