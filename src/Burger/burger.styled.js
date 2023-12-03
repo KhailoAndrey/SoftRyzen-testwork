@@ -143,26 +143,25 @@ export const SocialBlock = styled.div`
 export const FBIcon = styled(ReactSVG).attrs({
   src: fbimg,
 })`
-fill: var(--white-clr);
-stroke: var(--white-clr);
+  fill: var(--white-clr);
+  stroke: var(--white-clr);
   width: 24px;
   height: 24px;
   cursor: pointer;
-  &:hover{
+  &:hover {
     stroke: var(--main-clr-green);
-    fill: var(--main-clr-green)
+    fill: var(--main-clr-green);
   }
 `;
 
 export const InstaIcon = styled(ReactSVG).attrs({
   src: instaimg,
 })`
-stroke: var(--white-clr);
+  stroke: var(--white-clr);
   width: 24px;
   height: 24px;
   cursor: pointer;
-  &:hover{
-    stroke: var(--main-clr-green)
+  &:hover {
+    stroke: var(--main-clr-green);
   }
 `;
-

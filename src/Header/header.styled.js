@@ -48,7 +48,6 @@ export const BtnIcon = styled.img`
 export const TouchText = styled.p`
   color: var(--main-clr-dark-green);
   transition: color 0.3s ease;
-
   font-family: Fira Sans;
   font-size: 16px;
   font-style: normal;
