@@ -21,7 +21,7 @@ import {
 const About = () => {
   return (
     <>
-      <Wrapper>
+      <Wrapper id="values">
         <ValuesBox>
           <ValuesTitle>Main values of our company</ValuesTitle>
           <Rectangle />

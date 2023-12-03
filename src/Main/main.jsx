@@ -35,7 +35,7 @@ const Main = () => {
 
   return (
     <>
-      <Wrapper>
+      <Wrapper id='main'>
         <MainInfo>
           <MainTitle>
             <TextTitle>renewable energy for any task</TextTitle>

@@ -162,7 +162,7 @@ export const FormBox = styled.div`
     width: 342px;
     padding: 36px 24px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1280px) {
     width: 596px;
     padding: 48px;
   }

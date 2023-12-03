@@ -106,7 +106,7 @@ export const Arrow = styled(ReactSVG).attrs({
     if (props.rotateupleft) transformValue += 'rotate(135deg) ';
     if (props.scale) transformValue += `scale(${props.scale})`;
     return transformValue.trim() || 'none';
-  }};
+  }}; 
   transform-origin: center;
 `;
 
@@ -293,3 +293,4 @@ export const SwiperItemDate = styled.p`
     letter-spacing: -0.64px;
   }
 `;
+

@@ -40,14 +40,6 @@ img {
   height: auto;
 }
 
-ul,
-ol,
-li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
 h1,
 h2,
 h3,
@@ -88,12 +80,4 @@ background-color: var(--main-bg-clr);
     width: 1240px;
     padding: 0;
   }
-}
-
-.no_scroll {
-  overflow: hidden;
-}
-
-.hidden {
-  display: none;
 }
