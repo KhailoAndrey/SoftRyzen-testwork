@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/SoftRyzen-testwork/static/css/main.d716e236.css",
+    "main.css": "/SoftRyzen-testwork/static/css/main.8cb3887e.css",
     "main.js": "/SoftRyzen-testwork/static/js/main.bc1b7109.js",
     "static/js/798.a77af145.chunk.js": "/SoftRyzen-testwork/static/js/798.a77af145.chunk.js",
     "static/js/142.65bd54a4.chunk.js": "/SoftRyzen-testwork/static/js/142.65bd54a4.chunk.js",
@@ -40,6 +40,7 @@
     "static/media/wind-turbine_mob.png": "/SoftRyzen-testwork/static/media/wind-turbine_mob.82188a65894393fb43c5.png",
     "static/media/values-mens_tab.png": "/SoftRyzen-testwork/static/media/values-mens_tab.495425bcc40ab7b9ecae.png",
     "static/media/values-men_tab.png": "/SoftRyzen-testwork/static/media/values-men_tab.b9e07be8b9abef76724b.png",
+    "static/media/Oswald-Bold.ttf": "/SoftRyzen-testwork/static/media/Oswald-Bold.41669c1e4f6bdc605d26.ttf",
     "static/media/Oswald-Regular.ttf": "/SoftRyzen-testwork/static/media/Oswald-Regular.31bce04a1ae8549b1464.ttf",
     "static/media/innovation.svg": "/SoftRyzen-testwork/static/media/innovation.09c792685007a705b0bb20e017ad50b7.svg",
     "static/media/call.svg": "/SoftRyzen-testwork/static/media/call.e5a62b2398fcfd802d72cfba4843750b.svg",
@@ -61,11 +62,11 @@
     "static/media/minus.svg": "/SoftRyzen-testwork/static/media/minus.2168a63d3f001faf247a95f5503f9e29.svg",
     "static/media/close-light.svg": "/SoftRyzen-testwork/static/media/close-light.dc24a051882f8b3588bf87c8750aac94.svg",
     "static/media/ellipse.svg": "/SoftRyzen-testwork/static/media/ellipse.9ea3b36591b56eef2e7a.svg",
-    "main.d716e236.css.map": "/SoftRyzen-testwork/static/css/main.d716e236.css.map",
+    "main.8cb3887e.css.map": "/SoftRyzen-testwork/static/css/main.8cb3887e.css.map",
     "main.bc1b7109.js.map": "/SoftRyzen-testwork/static/js/main.bc1b7109.js.map"
   },
   "entrypoints": [
-    "static/css/main.d716e236.css",
+    "static/css/main.8cb3887e.css",
     "static/js/main.bc1b7109.js"
   ]
 }
