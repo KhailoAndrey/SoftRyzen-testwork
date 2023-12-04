@@ -1,6 +1,3 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 # Тестове завдання для компаії SoftRyzen Internship
 
@@ -9,4 +6,4 @@ Styled-components, Swiper, Formik та інших вбудованих у React 
 
 Веб-сторінка (лендінг) реалізована під різні розміри екранів за допомогою адаптивної верстки.
 
-№ Приємного перегляду :)
+# Приємного перегляду :)
