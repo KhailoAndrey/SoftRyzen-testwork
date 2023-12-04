@@ -40,7 +40,7 @@
 
 body {
   font-family: 'Oswald';
-  background-color: var(--main-bg-clr);
+  background: var(--main-bg-clr);
   overflow-x: hidden;
 }
 
@@ -70,7 +70,7 @@ button {
   padding-left: 20px;
   padding-right: 20px;
   max-width: 100%;
-background-color: var(--main-bg-clr);
+  background: var(--main-bg-clr);
 
   /* mobile screen */
   @media screen and (min-width: 360px) {

@@ -4,15 +4,18 @@ import {
   BtnTouch,
   BurgerBtn,
   Container,
+  HeaderContainer,
   OverflowHidden,
   TouchArrow,
   TouchText,
 } from './header.styled';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import BurgerMenu from 'Burger/burger';
 import useModal from 'hooks/useModal';
 
 const Header = () => {
+  const [isTransparent, setIsTransparent] = useState(true);
+  const [scrollPosition, setScrollPosition] = useState(0);
   const { isModalOpen, setIsModalOpen } = useModal('modalOpen');
 
   const modalRef = useRef(null);
@@ -34,6 +37,19 @@ const Header = () => {
       document.removeEventListener('mousedown', handleOutsideClick);
     };
   });
+
+  useEffect(() => {
+    const handleScrollEvent = () => {
+      setScrollPosition(window.scrollY);
+      setIsTransparent(window.scrollY === 0);
+    };
+
+    window.addEventListener('scroll', handleScrollEvent);
+
+    return () => {
+      window.removeEventListener('scroll', handleScrollEvent);
+    };
+  }, []);
 
   function handleKeyDown(event) {
     if (event.code === 'Escape') {
@@ -59,30 +75,31 @@ const Header = () => {
         left: 0,
         behavior: 'smooth',
       });
+      setScrollPosition(window.scrollY);
+      setIsTransparent(false);
     }
   };
   return (
     <>
-      <Container id="header">
-        <Logo />
-        <BurgerBtn onClick={isModalOpen ? closeModal : openModal}>
-          <BtnIcon />
-        </BurgerBtn>
-        <BtnTouch onClick={handleScroll}>
-          <TouchText>Get in touch</TouchText>
-          <TouchArrow />
-        </BtnTouch>
-        </Container>
-        {isModalOpen && (
-          <div
-            ref={modalRef}
-            id="modal"
-          >
-            <OverflowHidden className={isModalOpen ? 'modal-open' : ''}>
-              <BurgerMenu onClose={closeModal} />
-            </OverflowHidden>
-          </div>
-        )}
+      <Container isTransparent={isTransparent}>
+        <HeaderContainer id="header">
+          <Logo />
+          <BurgerBtn onClick={isModalOpen ? closeModal : openModal}>
+            <BtnIcon />
+          </BurgerBtn>
+          <BtnTouch onClick={handleScroll}>
+            <TouchText>Get in touch</TouchText>
+            <TouchArrow />
+          </BtnTouch>
+        </HeaderContainer>
+      </Container>
+      {isModalOpen && (
+        <div ref={modalRef} id="modal">
+          <OverflowHidden className={isModalOpen ? 'modal-open' : ''}>
+            <BurgerMenu onClose={closeModal} />
+          </OverflowHidden>
+        </div>
+      )}
     </>
   );
 };

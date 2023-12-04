@@ -3,23 +3,35 @@ import { ReactSVG } from 'react-svg';
 import buttonIcon from '../images/menu.svg';
 import arrow from '../images/touch_arrow.svg';
 
+
 export const Container = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 40px;
-  padding: 0;
-  background-color: var(--main-bg-clr);
+  width: 100vw;
+  background-color: ${(props) =>
+  props.isTransparent ? 'transparent' : 'var(--white-clr)'};
   position: sticky;
   top: 0;
   z-index: 2;
+`
+
+export const HeaderContainer = styled.div`
+  height: 40px;
+  width: 320px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
 
   @media screen and (min-width: 768px) {
     height: 68px;
+    width: 708px;
   }
 
   @media screen and (min-width: 1280px) {
     padding: 0;
+    width: 1240px;
   }
 `;
 

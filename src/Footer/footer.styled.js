@@ -6,12 +6,14 @@ import instaimg from '../images/instagram.svg';
 
 export const Wrapper = styled.div`
   width: 320px;
-  margin: 24px 0 24px;
+  margin-top: 24px;
   display: flex;
   flex-direction: column;
   gap: 24px;
+  padding-bottom: 24px;
   @media screen and (min-width: 768px) {
-    margin: 40px 0 40px;
+    margin-top: 40px;
+    padding-bottom: 40px;
     width: 708px;
     gap: 16px;
   }
