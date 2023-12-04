@@ -66,8 +66,22 @@ const BurgerMenu = ({ onClose }) => {
             })}
           </Navi>
           <SocialBlock>
-            <FBIcon />
-            <InstaIcon />
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: 'none' }}
+            >
+              <FBIcon />
+            </a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: 'none' }}
+            >
+              <InstaIcon />
+            </a>
           </SocialBlock>
         </ModalContent>
       </ModalWrapper>

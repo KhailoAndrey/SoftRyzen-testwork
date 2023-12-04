@@ -9,6 +9,7 @@ import {
   FooterSocial,
   FooterText,
   InstaIcon,
+  Mail,
   Wrapper,
 } from './footer.styled';
 
@@ -27,22 +28,52 @@ const Footer = () => {
         <FooterLogoBox>
           <Logo />
           <FooterSocial>
-            <FBIcon />
-            <InstaIcon />
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: 'none' }}
+            >
+              <FBIcon />
+            </a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: 'none' }}
+            >
+              <InstaIcon />
+            </a>
           </FooterSocial>
           <FooterBtnUp onClick={handleScrollToTop}>
             <ArrowRight />
           </FooterBtnUp>
         </FooterLogoBox>
         <FooterSocial>
-          <FBIcon />
-          <InstaIcon />
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: 'none' }}
+          >
+            <FBIcon />
+          </a>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: 'none' }}
+          >
+            <InstaIcon />
+          </a>
         </FooterSocial>
         <FooterInfo>
           <FooterText>
             79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
           </FooterText>
-          <FooterText>office@ecosolution.com</FooterText>
+          <Mail href="mailto:office@ecosolution.com">
+            office@ecosolution.com
+          </Mail>
           <FooterText>ecosolution © 2023</FooterText>
         </FooterInfo>
       </Wrapper>

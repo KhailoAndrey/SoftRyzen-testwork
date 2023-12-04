@@ -130,3 +130,14 @@ export const FooterText = styled.p`
   line-height: normal;
   letter-spacing: -0.64px;
 `;
+
+export const Mail = styled.a`
+  text-decoration: none;
+  color: var(--main-clr-dark-green);
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.64px;
+`

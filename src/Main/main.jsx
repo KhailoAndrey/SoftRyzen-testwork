@@ -35,7 +35,7 @@ const Main = () => {
 
   return (
     <>
-      <Wrapper id='main'>
+      <Wrapper id="main">
         <MainInfo>
           <MainTitle>
             <TextTitle>renewable energy for any task</TextTitle>
@@ -57,7 +57,9 @@ const Main = () => {
           <MainAddress>
             79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
           </MainAddress>
-          <MainMail>office@ecosolution.com</MainMail>
+          <MainMail href="mailto:office@ecosolution.com">
+            office@ecosolution.com
+          </MainMail>
           <MainNotation>ecosolution © 2023</MainNotation>
         </MainContacts>
         <MainImage />

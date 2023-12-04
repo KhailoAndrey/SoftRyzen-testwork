@@ -27,20 +27,30 @@ const Contacts = () => {
             <ContactsBlock>
               <Subtitle>Phone:</Subtitle>
               <ContactsInfoBlock>
-                <PhoneIcon />
+                <a href="tel:+380981234567" style={{ textDecoration: 'none' }}>
+                  <PhoneIcon />
+                </a>
                 <ContactsText>38 (098) 12 34 567</ContactsText>
               </ContactsInfoBlock>
               <ContactsInfoBlock>
-                <PhoneIcon />
+                <a href="tel:+380931234567" style={{ textDecoration: 'none' }}>
+                  <PhoneIcon />
+                </a>
                 <ContactsText>38 (093) 12 34 567</ContactsText>
               </ContactsInfoBlock>
             </ContactsBlock>
+
             <ContactsBlock>
               <Subtitle>E-mail:</Subtitle>
-              <ContactsInfoBlock>
-                <MailIcon />
-                <ContactsText>office@ecosolution.com</ContactsText>
-              </ContactsInfoBlock>
+              <a
+                href="mailto:office@ecosolution.com"
+                style={{ textDecoration: 'none' }}
+              >
+                <ContactsInfoBlock>
+                  <MailIcon />
+                  <ContactsText>office@ecosolution.com</ContactsText>
+                </ContactsInfoBlock>
+              </a>
             </ContactsBlock>
             <ContactsBlock>
               <Subtitle>Address:</Subtitle>
@@ -55,10 +65,24 @@ const Contacts = () => {
               <Subtitle>Social Networks:</Subtitle>
               <ContactsInfoBlock>
                 <SocialBlock>
-                  <FBIcon />
+                  <a
+                    href="https://www.facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: 'none' }}
+                  >
+                    <FBIcon />
+                  </a>
                 </SocialBlock>
                 <SocialBlock>
-                  <InstaIcon />
+                  <a
+                    href="https://www.instagram.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: 'none' }}
+                  >
+                    <InstaIcon />
+                  </a>
                 </SocialBlock>
               </ContactsInfoBlock>
             </ContactsBlock>
