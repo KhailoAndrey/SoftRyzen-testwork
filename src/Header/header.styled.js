@@ -3,16 +3,12 @@ import { ReactSVG } from 'react-svg';
 import buttonIcon from '../images/menu.svg';
 import arrow from '../images/touch_arrow.svg';
 
-
 export const Container = styled.div`
   width: 100vw;
-  background-color: ${(props) =>
-  props.isTransparent ? 'transparent' : 'var(--white-clr)'};
   position: sticky;
   top: 0;
   z-index: 2;
-`
-
+`;
 export const HeaderContainer = styled.div`
   height: 40px;
   width: 320px;

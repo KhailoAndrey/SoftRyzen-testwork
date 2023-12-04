@@ -15,7 +15,6 @@ import useModal from 'hooks/useModal';
 
 const Header = () => {
   const [isTransparent, setIsTransparent] = useState(true);
-  const [scrollPosition, setScrollPosition] = useState(0);
   const { isModalOpen, setIsModalOpen } = useModal('modalOpen');
 
   const modalRef = useRef(null);
@@ -40,7 +39,6 @@ const Header = () => {
 
   useEffect(() => {
     const handleScrollEvent = () => {
-      setScrollPosition(window.scrollY);
       setIsTransparent(window.scrollY === 0);
     };
 
@@ -75,13 +73,16 @@ const Header = () => {
         left: 0,
         behavior: 'smooth',
       });
-      setScrollPosition(window.scrollY);
       setIsTransparent(false);
     }
   };
   return (
     <>
-      <Container isTransparent={isTransparent}>
+      <Container
+        style={{
+          background: isTransparent ? 'transparent' : 'var(--white-clr)',
+        }}
+      >
         <HeaderContainer id="header">
           <Logo />
           <BurgerBtn onClick={isModalOpen ? closeModal : openModal}>
