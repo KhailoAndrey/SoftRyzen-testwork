@@ -1,3 +1,7 @@
+import React, { useState, useEffect } from 'react';
+import { Linee } from 'utils/line.styled';
+import { ReactComponent as CloseIcon } from '../images/close-light.svg';
+import { ReactComponent as LinkIcon } from '../images/arrow-right-up.svg';
 import {
   CloseBlock,
   CloseBtn,
@@ -12,9 +16,6 @@ import {
   Navi,
   SocialBlock,
 } from './burger.styled';
-import { ReactComponent as CloseIcon } from '../images/close-light.svg';
-import { ReactComponent as LinkIcon } from '../images/arrow-right-up.svg';
-import { Linee } from 'utils/line.styled';
 
 const links = [
   { name: 'Main', link: 'main' },
@@ -25,6 +26,37 @@ const links = [
 ];
 
 const BurgerMenu = ({ onClose }) => {
+  const [activeSection, setActiveSection] = useState();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5,
+      }
+    );
+
+    const sections = links.map(({ link }) => document.getElementById(link));
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+
+    return () => {
+      sections.forEach(section => {
+        observer.unobserve(section);
+      });
+    };
+  }, []);
+
   const handleLinkClick = link => {
     const sectionId = link;
     const section = document.getElementById(sectionId);
@@ -57,7 +89,10 @@ const BurgerMenu = ({ onClose }) => {
             {links.map(({ name, link }) => {
               return (
                 <LinkBlock key={link}>
-                  <Links onClick={() => handleLinkClick(link)}>
+                  <Links
+                    onClick={() => handleLinkClick(link)}
+                    className={activeSection === link ? 'active' : ''}
+                  >
                     {`${name}`}
                     <LinkIcon style={{ stroke: 'var(--white-clr)' }} />
                   </Links>

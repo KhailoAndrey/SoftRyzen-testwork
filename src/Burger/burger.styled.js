@@ -103,6 +103,7 @@ export const Navi = styled.div`
   width: 132px;
   height: auto;
 `;
+
 export const LinkBlock = styled.div`
   display: flex;
   gap: 8px;
@@ -119,8 +120,6 @@ export const LinkBlock = styled.div`
 
 export const Links = styled.a`
   list-style: none;
-  color: var(--main-text-clr);
-  opacity: 0.25;
   font-family: Fira Sans;
   font-size: 24px;
   font-style: normal;
@@ -129,9 +128,17 @@ export const Links = styled.a`
   letter-spacing: -0.96px;
   display: flex;
   align-items: center;
+  color: var(--main-text-clr);
+  opacity: 0.25;
   gap: 8px;
+  &.active {
+    color: var(--white-clr);
+    opacity: 1;
+    svg {
+      stroke: var(--white-clr);
+    }
+  }
 `;
-
 export const SocialBlock = styled.div`
   display: flex;
   align-items: center;
