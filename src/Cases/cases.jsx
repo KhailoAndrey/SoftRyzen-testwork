@@ -1,6 +1,6 @@
 import SwiperCore from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Autoplay, Scrollbar, A11y } from 'swiper/modules';
 import 'swiper/css';
 
 import { Linee } from 'utils/line.styled';
@@ -29,7 +29,7 @@ import {
 import { useRef, useState } from 'react';
 import SwiperSlideImg from './swiperItem';
 
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
+SwiperCore.use([Navigation, Autoplay, Scrollbar, A11y]);
 
 const Cases = ({ slides }) => {
   const swiperRef = useRef(null);
@@ -58,6 +58,10 @@ const Cases = ({ slides }) => {
         spaceBetween: 48,
       },
     },
+    autoplay: {
+          delay: 2500,
+          disableOnInteraction: true,
+        },
     loop: true,
     initialSlide: 0,
     navigation: {
